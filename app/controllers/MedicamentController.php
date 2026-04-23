@@ -10,4 +10,12 @@ class MedicamentController extends Controller{
     public function displayAddMedicament(){
         $this->view("addMedicament");
     }
+
+    public function insertMedicament(){
+        $design = $_POST['designation'];
+        $desc = $_POST['description'];
+        $prix = $_POST['prix'];
+        $medicament = new Medicament();
+        $medicament->createMedicament($design, $desc, $prix);
+    }
 }

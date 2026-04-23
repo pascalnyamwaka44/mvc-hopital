@@ -11,5 +11,7 @@ if($page == "insererMedoc"){
     $medicament->displayAddMedicament();
 } elseif($page == "liste"){
     $medicament->displayMedicament();
+} elseif($page == "insert"){
+    $medicament->insertMedicament();
 }
 

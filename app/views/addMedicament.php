@@ -8,7 +8,7 @@
 <body>
     <h1>Inserez un medicament</h1>
     <a href="?page=liste">Liste</a>
-    <form action="" method="POST">
+    <form action="?page=insert" method="POST">
         <div>
             <label for="">Designation</label>
             <input type="text" name="designation">
