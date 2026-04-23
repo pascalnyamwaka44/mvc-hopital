@@ -5,4 +5,11 @@ include "../app/controllers/MedicamentController.php";
 include "../app/models/Medicament.php";
 
 $medicament = new MedicamentController();
-$medicament->displayMedicament();
+
+$page = $_GET['page'];
+if($page == "insererMedoc"){
+    $medicament->displayAddMedicament();
+} elseif($page == "liste"){
+    $medicament->displayMedicament();
+}
+

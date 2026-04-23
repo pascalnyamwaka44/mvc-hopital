@@ -6,4 +6,8 @@ class MedicamentController extends Controller{
 
         $this->view("medicament", $data['medocs']);
     }
+
+    public function displayAddMedicament(){
+        $this->view("addMedicament");
+    }
 }
